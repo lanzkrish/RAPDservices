@@ -3,8 +3,9 @@ body{
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
+    /* background: linear-gradient( 90deg, rgb(73, 225, 225), rgb(31, 87, 171), rgb(233, 134, 151), rgba(255, 0, 0, 0.467), orange); */
 
+}
 .frame {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -26,7 +27,13 @@ h1 {
     color: black;
 }
 h1 span {
-    color: purple;
+    /* color: purple; */
+    font-size: 72px;
+    background: #fff;
+    background: -webkit-linear-gradient( 40deg,  rgb(73, 225, 225), rgb(31, 87, 171), rgb(233, 134, 151), rgba(255, 0, 0, 0.467), orange);
+    /* background: -webkit-linear-gradient( to right  rgb(73, 225, 225), rgb(31, 87, 171), rgb(233, 134, 151), rgba(255, 0, 0, 0.467), orange); */
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2 {
     font-size: 1.5rem;
@@ -73,14 +80,15 @@ button:hover {
 }
 
 header {
-    background-color: rgb(222, 222, 222);
-
+    background-color: rgb(50, 50, 50);
+    /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 68%, rgba(0,212,255,1) 100%); */
     width: 100vw;
     padding: 1px;
 }
 header h1 {
     font-size: 1rem; 
     text-align: center;   
+    
 }
 
 section {
