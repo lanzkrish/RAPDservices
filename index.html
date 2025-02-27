@@ -11,20 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-        <header class="text-center">
-            <h1>Hassle-free Laptop repair at your doorstep</h1>
+        <header class="text-center bg-dark fixed-top" style="margin-bottom: 100px;">
+            <h1 class="fw-medium text-white">Hassle-free Laptop repair at your doorstep</h1>
             <p>site under development but still you can book a service below</p>
         </header>
-    <section>
+    <section class="bg-body fw-bold " style="margin-top: 100px;">
         <div class="headertext">
             <div style="display: inline-block; text-align: left; margin-left: 10px;">
               <img src="./rapd_Logo.webp" style="filter: blur(10px);" height="300px" alt="">
             </div>
-            <div style="display: inline-block; text-align: left;">
-                <h1><span>Hi there, </span></h1>
+            <div class="fs-4 text" style="display: inline-block; text-align: left;">
+                <h1> <span> Hi there, </span></h1>
         <h2>How can we help you today?</h2>
-        <p>Get you Laptop repaired at your doorstep!</p>
-        <p> We offer a wide range of services to help you get your laptop back on the track.</p>
+        <div class="fs-6 text fw-medium">
+          <p> Get your <span>Laptop</span> repaired at your doorstep!</p>
+        <p> We offer a wide range of services to help you get your Laptop, PC or Desktop back on the track.</p>
+        </div>
         
             </div>
         </div>
@@ -78,10 +80,10 @@
                 <div class="col-md-6">
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Type of Service</label>
+                      <label class="block text-sm mb-2 text-gray-600 dark:text-gray-400" for="inputGroupSelect01">Type of Service</label>
                     </div>
-                    <select class="custom-select" type="select" name="select_service" id="select_service" placeholder="select" required>
-                      <option value="On-the-spot Service" >On the spot Service</option>
+                    <select class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" type="select" name="select_service" id="select_service" placeholder="select" required>
+                      <option value="On-the-spot Service" notselected >On the spot Service</option>
                       <option value="Same Day / within 24 hrs Service">Same Day / within 24 hrs Service (Provided all parts are avilable)</option>
                       <option value="Pickup & Drop Service">Pickup & Drop Service</option>
                       <option value="Custom PC build related Service">Custom PC build related Service</option>
