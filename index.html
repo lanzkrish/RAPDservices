@@ -18,10 +18,10 @@
     <section>
         <div class="headertext">
             <div style="display: inline-block; text-align: left; margin-left: 10px;">
-              <img src="./rapd_Logo.webp" height="300px" alt="">
+              <img src="./rapd_Logo.webp" style="filter: blur(10px);" height="300px" alt="">
             </div>
             <div style="display: inline-block; text-align: left;">
-                <h1>Hi there, <span>John</span></h1>
+                <h1><span>Hi there, </span></h1>
         <h2>How can we help you today?</h2>
         <p>Get you Laptop repaired at your doorstep!</p>
         <p> We offer a wide range of services to help you get your laptop back on the track.</p>
@@ -44,7 +44,7 @@
             </p>
           </div>
           <div class="row contact-form">
-            <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+            <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" >
               <input type="hidden" name="access_key" value="46707c4f-71eb-43aa-89aa-91beb82e79e7" />
               <input type="hidden" name="subject" value="New Booking from Rapd Web(Booking Laptop Service)" />
               <!-- Optional: To send the form submission as CC email -->
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-md-6">
                   <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone</label>
-                    <input type="number" name="phone" id="phone" placeholder="+91...." required
+                    <input type="number" name="phone" id="phone" placeholder="+91...." required min="6000000000" max="9999999999"
                       class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
                     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
                       Please provide your phone number.
@@ -107,7 +107,7 @@
                     Please describe your issue before Booking. or Give a call directly to our support team.
                   </div>
                 </div>
-                   <input type="hidden" name="redirect" value="http://127.0.0.1:5500/tml/thankyou.html"> 
+                   <input type="hidden" name="redirect" value="https://rapdservices.netlify.app/thankyou"> 
                 <div class="col-lg-12 text-center">
                   <button type="submit"
                     class="w-full btn btn-primary px-3 py-3 ">
